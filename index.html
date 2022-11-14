@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Design Agency</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script nonce="f96b1ace-7977-40af-8b54-d1c318233c0e">
+        (function(w, d) {
+            ! function(Z, _, ba, bb) {
+                Z.zarazData = Z.zarazData || {};
+                Z.zarazData.executed = [];
+                Z.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                Z.zaraz.q = [];
+                Z.zaraz._f = function(bc) {
+                    return function() {
+                        var bd = Array.prototype.slice.call(arguments);
+                        Z.zaraz.q.push({
+                            m: bc,
+                            a: bd
+                        })
+                    }
+                };
+                for (const be of["track", "set", "debug"]) Z.zaraz[be] = Z.zaraz._f(be);
+                Z.zaraz.init = () => {
+                    var bf = _.getElementsByTagName(bb)[0],
+                        bg = _.createElement(bb),
+                        bh = _.getElementsByTagName("title")[0];
+                    bh && (Z.zarazData.t = _.getElementsByTagName("title")[0].text);
+                    Z.zarazData.x = Math.random();
+                    Z.zarazData.w = Z.screen.width;
+                    Z.zarazData.h = Z.screen.height;
+                    Z.zarazData.j = Z.innerHeight;
+                    Z.zarazData.e = Z.innerWidth;
+                    Z.zarazData.l = Z.location.href;
+                    Z.zarazData.r = _.referrer;
+                    Z.zarazData.k = Z.screen.colorDepth;
+                    Z.zarazData.n = _.characterSet;
+                    Z.zarazData.o = (new Date).getTimezoneOffset();
+                    Z.zarazData.q = [];
+                    for (; Z.zaraz.q.length;) {
+                        const bl = Z.zaraz.q.shift();
+                        Z.zarazData.q.push(bl)
+                    }
+                    bg.defer = !0;
+                    for (const bm of[localStorage, sessionStorage]) Object.keys(bm || {}).filter((bo => bo.startsWith("_zaraz_"))).forEach((bn => {
+                        try {
+                            Z.zarazData["z_" + bn.slice(7)] = JSON.parse(bm.getItem(bn))
+                        } catch {
+                            Z.zarazData["z_" + bn.slice(7)] = bm.getItem(bn)
+                        }
+                    }));
+                    bg.referrerPolicy = "origin";
+                    bg.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(Z.zarazData)));
+                    bf.parentNode.insertBefore(bg, bf)
+                };
+                ["complete", "interactive"].includes(_.readyState) ? zaraz.init() : Z.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, 0, "script");
+        })(window, document);
+    </script>
+</head>
+
+<body>
+    <div class="site-wrap">
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <div class="container">
+            <div class="row no-gutters site-navbar align-items-center py-3">
+                <div class="col-6 col-lg-2 site-logo">
+                    <a href="index.html">Design Agency GB</a>
+                </div>
+                <div class="col-6 col-lg-10 text-right menu">
+                    <nav class="site-navigation text-right text-md-right">
+                        <ul class="site-menu js-clone-nav d-none d-lg-block">
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li class="has-children">
+                                <a href="services.html">Services</a>
+                                <ul class="dropdown arrow-top">
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">WP Development</a></li>
+                                    <li><a href="#">Front End</a></li>
+                                    <li class="has-children">
+                                        <a href="#">Sub Menu</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Web Design</a></li>
+                                            <li><a href="#">WordPress Development</a></li>
+                                            <li><a href="#">Front End</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="site-hero">
+                <div class="container">
+                    <div class="bg-img" style="background-image:url(images/hero_2.jpg)">
+                        <blockquote>
+                            <p>Design is not just what it looks like and feels like. Design is how it works.</p>
+                            <div class="author">
+                                <script data-pagespeed-no-defer>
+                                    //<![CDATA[
+                                    (function() {
+                                        for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function(b, c, a) {
+                                                if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
+                                                b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                                            }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
+                                            var m = k[l];
+                                            m in h || (h[m] = {});
+                                            h = h[m]
+                                        }
+                                        var n = k[k.length - 1],
+                                            p = h[n],
+                                            q = p ? p : function(b) {
+                                                var c;
+                                                if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
+                                                c = this + "";
+                                                if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
+                                                b |= 0;
+                                                for (var a = ""; b;)
+                                                    if (b & 1 && (a += c), b >>>= 1) c += c;
+                                                return a
+                                            };
+                                        q != p && null != q && g(h, n, {
+                                            configurable: !0,
+                                            writable: !0,
+                                            value: q
+                                        });
+                                        var t = this;
+
+                                        function u(b, c) {
+                                            var a = b.split("."),
+                                                d = t;
+                                            a[0] in d || !d.execScript || d.execScript("var " + a[0]);
+                                            for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c
+                                        };
+
+                                        function v(b) {
+                                            var c = b.length;
+                                            if (0 < c) {
+                                                for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
+                                                return a
+                                            }
+                                            return []
+                                        };
+
+                                        function w(b) {
+                                            var c = window;
+                                            if (c.addEventListener) c.addEventListener("load", b, !1);
+                                            else if (c.attachEvent) c.attachEvent("onload", b);
+                                            else {
+                                                var a = c.onload;
+                                                c.onload = function() {
+                                                    b.call(this);
+                                                    a && a.call(this)
+                                                }
+                                            }
+                                        };
+                                        var x;
+
+                                        function y(b, c, a, d, e) {
+                                            this.h = b;
+                                            this.j = c;
+                                            this.l = a;
+                                            this.f = e;
+                                            this.g = {
+                                                height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+                                                width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+                                            };
+                                            this.i = d;
+                                            this.b = {};
+                                            this.a = [];
+                                            this.c = {}
+                                        }
+
+                                        function z(b, c) {
+                                            var a, d, e = c.getAttribute("data-pagespeed-url-hash");
+                                            if (a = e && !(e in b.c))
+                                                if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
+                                                else {
+                                                    d = c.getBoundingClientRect();
+                                                    var f = document.body;
+                                                    a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
+                                                    d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
+                                                    f = a.toString() + "," + d;
+                                                    b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width)
+                                                }
+                                            a && (b.a.push(e),
+                                                b.c[e] = !0)
+                                        }
+                                        y.prototype.checkImageForCriticality = function(b) {
+                                            b.getBoundingClientRect && z(this, b)
+                                        };
+                                        u("pagespeed.CriticalImages.checkImageForCriticality", function(b) {
+                                            x.checkImageForCriticality(b)
+                                        });
+                                        u("pagespeed.CriticalImages.checkCriticalImages", function() {
+                                            A(x)
+                                        });
+
+                                        function A(b) {
+                                            b.b = {};
+                                            for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document.getElementsByTagName(c[d])));
+                                            if (a.length && a[0].getBoundingClientRect) {
+                                                for (d = 0; c = a[d]; ++d) z(b, c);
+                                                a = "oh=" + b.l;
+                                                b.f && (a += "&n=" + b.f);
+                                                if (c = !!b.a.length)
+                                                    for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
+                                                        var e = "," + encodeURIComponent(b.a[d]);
+                                                        131072 >= a.length + e.length && (a += e)
+                                                    }
+                                                b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0);
+                                                C = a;
+                                                if (c) {
+                                                    d = b.h;
+                                                    b = b.j;
+                                                    var f;
+                                                    if (window.XMLHttpRequest) f =
+                                                        new XMLHttpRequest;
+                                                    else if (window.ActiveXObject) try {
+                                                        f = new ActiveXObject("Msxml2.XMLHTTP")
+                                                    } catch (r) {
+                                                        try {
+                                                            f = new ActiveXObject("Microsoft.XMLHTTP")
+                                                        } catch (D) {}
+                                                    }
+                                                    f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
+                                                }
+                                            }
+                                        }
+
+                                        function B() {
+                                            var b = {},
+                                                c;
+                                            c = document.getElementsByTagName("IMG");
+                                            if (!c.length) return {};
+                                            var a = c[0];
+                                            if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                                            for (var d = 0; a = c[d]; ++d) {
+                                                var e = a.getAttribute("data-pagespeed-url-hash");
+                                                e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = {
+                                                    rw: a.width,
+                                                    rh: a.height,
+                                                    ow: a.naturalWidth,
+                                                    oh: a.naturalHeight
+                                                })
+                                            }
+                                            return b
+                                        }
+                                        var C = "";
+                                        u("pagespeed.CriticalImages.getBeaconData", function() {
+                                            return C
+                                        });
+                                        u("pagespeed.CriticalImages.Run", function(b, c, a, d, e, f) {
+                                            var r = new y(b, c, a, e, f);
+                                            x = r;
+                                            d && w(function() {
+                                                window.setTimeout(function() {
+                                                    A(r)
+                                                }, 0)
+                                            })
+                                        });
+                                    })();
+
+                                    pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'index.html', '-ilGEe-FWC', true, false, 'B7S2e2Qf0xQ');
+                                    //]]>
+                                </script>
+                                <script type="text/javascript" style="display:none">
+                                    //<![CDATA[
+                                    window.__mirage2 = {
+                                        petok: "7ZzVxziyG.OeljCna6z8WJPMc4lRJqmW46_8lFgk7bg-1800-0"
+                                    };
+                                    //]]>
+                                </script>
+                                <script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+                                <img data-cfsrc="images/person_1.jpg" alt="Person image" data-pagespeed-url-hash="114465296" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img src="images/person_1.jpg" alt="Person image" data-pagespeed-url-hash="114465296" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
+                                <cite>Steve Jobs</cite>
+                            </div>
+                        </blockquote>
+                        <div class="cta-box">
+                            <h2>We're Available For Work</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi pariatur..</p>
+                            <a href="#" class="contact-now">Hire Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <a class="service">
+                                <img src="images/flaticon/svg/001.svg" alt="Image" class="img-fluid" data-pagespeed-url-hash="2746550889" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <h3>Mobile Application</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam alias dolore repudiandae </p>
+                                <ul class="list-unstyled services-list">
+                                    <li>Andriod Development</li>
+                                    <li>iOS Development</li>
+                                    <li>React Native</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <a class="service">
+                                <img src="images/flaticon/svg/002.svg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3041050810" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <h3>E-Commerce</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam alias dolore repudiandae </p>
+                                <ul class="list-unstyled services-list">
+                                    <li>WooCommerce</li>
+                                    <li>Shopify Integration</li>
+                                    <li>BigCommerce</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <a class="service">
+                                <img src="images/flaticon/svg/003.svg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3335550731" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <h3>Web Application</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam alias dolore repudiandae </p>
+                                <ul class="list-unstyled services-list">
+                                    <li>React Web App</li>
+                                    <li>Vue JS Web App</li>
+                                    <li>Angular Web App</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-section">
+                <div class="container">
+                    <div class="half d-md-flex d-block align-items-stretch">
+                        <a href="single.html" class="img" style="background-image:url(images/work_1.jpg)">
+                        </a>
+                        <div class="half-content align-self-center">
+                            <h3>kMix Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi pariatur..</p>
+                            <p>
+                                <strong>Client:</strong> JUVINLE Corp. <br>
+                                <strong>Date:</strong> 2021
+                            </p>
+                            <a href="single.html">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="half d-md-flex align-items-stretch">
+                        <a href="single.html" class="img order-md-2" style="background-image:url(images/work_2.jpg)">
+                        </a>
+                        <div class="half-content align-self-center">
+                            <h3>Dieter Rams</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi pariatur..</p>
+                            <p>
+                                <strong>Client:</strong> XYZ Inc. <br>
+                                <strong>Date:</strong> 2021
+                            </p>
+                            <a href="single.html">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <div class="testimonial">
+                                <img data-cfsrc="images/person_1.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="114465296" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img src="images/person_1.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="114465296" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
+                                <div class="mb-3">
+                                    <h3>Steve Jobs</h3>
+                                    <span>Co-Founder</span>
+                                </div>
+                                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi pariatur..&rdquo;</blockquote>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <div class="testimonial">
+                                <img data-cfsrc="images/person_2.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="408965217" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img src="images/person_2.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="408965217" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
+                                <div class="mb-3">
+                                    <h3>John Doe</h3>
+                                    <span>Co-Founder</span>
+                                </div>
+                                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi pariatur..&rdquo;</blockquote>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <div class="testimonial">
+                                <img data-cfsrc="images/person_3.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="703465138" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="display:none;visibility:hidden;"><noscript><img src="images/person_3.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="703465138" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></noscript>
+                                <div class="mb-3">
+                                    <h3>John Smith</h3>
+                                    <span>Co-Founder</span>
+                                </div>
+                                <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus possimus, aut veniam. Ut minus, possimus quisquam cupiditate magnam nisi pariatur..&rdquo;</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div class="footer">
+            <div class="container">
+                <div class="row footer-inner">
+                    <div class="col-lg-3">
+                        <div class="widget mb-4">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium vitae aliquam quia beatae necessitatibus omnis nisi, maxime tempora neque et!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 pl-4 ml-auto">
+                        <div class="widget mb-4">
+                            <h3>Navigation</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="widget mb-4">
+                            <h3>Work</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Dieter Rams</a></li>
+                                <li><a href="#">kMix Design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="widget mb-4">
+                            <h3>Social</h3>
+                            <ul class="list-unstyled social">
+                                <li><a href="#"><span class="mr-2 icon-facebook"></span> Facebook</a></li>
+                                <li><a href="#"><span class="mr-2 icon-twitter"></span> Twitter</a></li>
+                                <li><a href="#"><span class="mr-2 icon-instagram"></span> Instagram</a></li>
+                                <li><a href="#"><span class="mr-2 icon-linkedin"></span> Linkedin</a></li>
+                                <li><a href="#"><span class="mr-2 icon-play"></span> Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5 text-center copyright">
+                        <p>
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://girish.ga" target="_blank">Girish Ban</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js+jquery-ui.js+popper.min.js.pagespeed.jc.no68Pn7aIK.js"></script>
+    <script>
+        eval(mod_pagespeed_gApS7pwvBR);
+    </script>
+    <script>
+        eval(mod_pagespeed_6y4BPY7JzT);
+    </script>
+    <script>
+        eval(mod_pagespeed_mmIKf12krJ);
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js+jquery.stellar.min.js.pagespeed.jc.hXJ6KJ0D-e.js"></script>
+    <script>
+        eval(mod_pagespeed_NY8pr_tdYZ);
+    </script>
+    <script>
+        eval(mod_pagespeed__QFhtkbupn);
+    </script>
+    <script src="js/jquery.fancybox.min.js+aos.js+main.js.pagespeed.jc.KdCfI0JgCN.js"></script>
+    <script>
+        eval(mod_pagespeed_8nN$43oexG);
+    </script>
+    <script>
+        eval(mod_pagespeed_a9zv_osYUN);
+    </script>
+    <script>
+        eval(mod_pagespeed__R4fPLH_9G);
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"766cecf2ace76ef8","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
